@@ -1,0 +1,80 @@
+@import "variables";
+@import "functions";
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    overflow: hidden;
+
+    .cross {
+        background-color: red;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+        float: right;
+    }
+
+    h3 {
+        font-size: 15px;
+        clear: both;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tags {
+        overflow: hidden;
+
+        .tag {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            color: white;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .front {
+            @include tag-color()
+        }
+
+        .back {
+            @include tag-color($color: red);
+        }
+
+        .device {
+            @include tag-color($color: gold)
+        }
+    }
+
+    &:hover {
+        background-color: $custom-blue-transparent;
+
+        .cross {
+            background-color: black;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .tag {
+            color: $custom-blue;
+        }
+    }
+}

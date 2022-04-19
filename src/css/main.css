@@ -1,3 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+main {
+  background-image: url("https://source.unsplash.com/EVQH70oYYNM");
+  background-size: cover;
+  height: 100vh;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+main h1 {
+  background-color: rgba(17, 117, 162, 0.4);
+  border-radius: 10px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+}
+main #kanban .column {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: calc(20% - 20px);
+  float: left;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+main #kanban .column h2 {
+  font-size: 15px;
+}
+main #kanban .column .card {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+main #kanban .column .card .cross {
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  float: right;
+}
+main #kanban .column .card h3 {
+  font-size: 15px;
+  clear: both;
+}
+main #kanban .column .card p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main #kanban .column .card .tags {
+  overflow: hidden;
+}
+main #kanban .column .card .tags .tag {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #kanban .column .card .tags .front {
+  background-color: limegreen;
+  margin-right: 5px;
+}
+main #kanban .column .card .tags .back {
+  background-color: red;
+  margin-right: 5px;
+}
+main #kanban .column .card .tags .device {
+  background-color: gold;
+  margin-right: 5px;
+}
+main #kanban .column .card:hover {
+  background-color: rgba(17, 117, 162, 0.4);
+}
+main #kanban .column .card:hover .cross {
+  background-color: black;
+}
+main #kanban .column .card:hover h3 {
+  color: white;
+}
+main #kanban .column .card:hover p {
+  color: white;
+}
+main #kanban .column .card:hover .tag {
+  color: rgb(17, 117, 162);
+}
 
 /*# sourceMappingURL=main.css.map */

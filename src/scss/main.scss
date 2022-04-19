@@ -1,0 +1,44 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: $background-image;
+    background-size: cover;
+    height: 100vh;
+    padding: 40px;
+    font-family: $font;
+    overflow: hidden;
+
+    h1 {
+        background-color: $custom-blue-transparent;
+        border-radius: 10px;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+        color: white;
+        font-size: 25px;
+    }
+
+    #kanban {
+
+        .column {
+            background-color: rgba(255 255 255 / 0.7);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: calc(100% / 5 - 20px);
+            float: left;
+
+            h2 {
+                font-size: 15px;
+            }
+
+            @import "card";
+        }
+    }
+}

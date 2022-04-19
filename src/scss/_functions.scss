@@ -1,0 +1,4 @@
+@mixin tag-color($color: limegreen) {
+    background-color: $color;
+    margin-right: 5px;
+}
